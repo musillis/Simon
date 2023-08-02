@@ -1,0 +1,275 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contenedor_circulos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    align-items: center;
+    border: 7px solid white;
+    border-radius: 90%;
+}
+
+label {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    margin: 50%;
+}
+
+.rojo {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(134, 57, 57);
+    border-radius: 60%;
+    margin: 20px;
+    border: 7px solid white;
+    cursor: pointer;
+}
+
+.rojo:active{
+     background-color: red; 
+}
+
+.verde {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(49, 82, 49);
+    border-radius: 60%;
+    margin: 20px;
+    border: 7px solid white;
+    cursor: pointer;
+}
+
+.verde:active{
+     background-color: rgb(7, 212, 7); 
+}
+
+.azul {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(86, 86, 177);
+    border-radius: 60%;
+    margin: 20px;
+    border: 7px solid white;
+    cursor: pointer;
+}
+
+.azul:active{
+    background-color: blue; 
+}
+
+.amarillo {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(197, 197, 107);
+    border-radius: 60%;
+    margin: 20px;
+    border: 7px solid white;
+    cursor: pointer;
+}
+
+.amarillo:active{
+     background-color: yellow; 
+}
+
+.Fondo{
+background-color: black;
+}
+
+.btncomenzar {
+    width: 200px;
+    height: 350px;
+    background-color: rgb(0, 0, 0);
+    margin: 20px;
+    border: 7px solid white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;    
+}
+
+.contenedor_btns1{
+    width: 200px;
+    height: 350px;
+    background-color: rgb(0, 0, 0);
+    margin: 20px;
+    border: 7px solid white;    
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.contenedor_btns1 button{
+    width: 100%;
+    height: 20%;
+    color: black;
+    background-color: rgb(214, 214, 72);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.contenedor_btns1 button :hover{
+    background-color: black;
+}
+
+.txtNombrejugador {
+    width: 100%; 
+    box-sizing: border-box; 
+    padding: 5px; 
+    margin-bottom: 10px;  
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .modal-contenido {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+    
+.modal button{
+
+    width: 4cm;
+    height: 1cm;
+    color: black;
+    background-color: rgb(214, 214, 72);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: medium;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+.modal-inicio{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-inicio button{
+    width: 4cm;
+    height: 1cm;
+    color: black;
+    background-color: rgb(214, 214, 72);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: medium;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+.modal-contenido-nombre{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#nombre-jugador{
+    width: 6cm;
+    height: 1cm;
+    box-sizing: border-box;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+
+.modal-contacto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.modal-contenido-contacto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.modal-contenido-contacto button{
+    width: 4cm;
+    height: 1cm;
+    color: black;
+    background-color: rgb(214, 214, 72);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: medium;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+.modal-contenido-contacto input{
+    width: 6cm;
+    height: 1cm;
+    box-sizing: border-box;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+
+#txt-mensaje{
+    width: 6cm;
+    height: 2cm;
+    box-sizing: border-box;
+    padding: 4px;
+    margin-bottom: 10px;
+    
+}
+
+#btn-Score{
+    background-color:rgb(134, 57, 57);
+   cursor:initial;
+    color: white;
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+#btn-Nombre{
+    background-color:rgb(134, 57, 57);
+    cursor:initial;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.modal-contenido-contacto a{
+    display: flex;
+    text-align: center;
+    margin: 1cm;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+}
