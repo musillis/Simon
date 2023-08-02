@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_lppa_simon.css">
+    <script src="js_lppa_simon.js"></script>
+    <title>Simon Juego - LPPA - 2023 - Musilli</title>
+</head>
+
+<body class="Fondo">
+   <div class="contenedor_btns">
+    <div class="btncomenzar">
+        <div class="contenedor_btns1">
+            <button id="btn-Jugar">Jugar!</button>
+            <button id="btn-Score" disabled = true>Score: 0</button>
+            <button id="btn-Nombre" disabled = true>Nombre del Jugador</button>
+            <button id="btn-comenzar">Parpadeo de Prueba</button>
+            <button id="btn-Contacto">Contacto</button>    
+        </div>
+    </div>
+   </div> 
+
+<div class = contenedor_circulos>
+    <div class="rojo"data-color="red"></div> 
+    <div class="verde"data-color="green"></div>
+    <div class="azul"data-color="blue"></div>
+    <div class="amarillo"data-color="yellow"></div>
+</div>
+    
+<div id="modal-perder" class="modal">
+    <div class="modal-contenido">
+      <h2>¡Perdiste!</h2>
+      <p>Nivel Alcanzado: <span id="nivel-perdido"></span></p>
+      <p>Puntaje: <span id="puntaje-perdido"></span></p>
+      <button id="btn-cerrar-modal">Cerrar</button>
+      <button id="btn-reiniciar">Reiniciar Partida</button>
+    </div>
+  </div>
+
+<div id="modal-nombres" class="modal-inicio">
+    <div class="modal-contenido-nombre">
+        <h2>¡Bienvenido a Simon!</h2>
+        <h3>Ingrese su Nombre para continuar</h3>
+        <input type="text" name="txt-nombre" id="nombre-jugador" placeholder="Nombre del Jugador">
+        <button id="btn-completar-nombre">Continuar</button>
+    </div>
+</div>
+
+<div id="modal-contacto" class="modal-contacto">
+    <div class="modal-contenido-contacto">
+        <h2>Dejanos tu Mensaje</h2>
+        <input type="text" name="txt-Nombre" id="nombre-contacto" placeholder="Nombre">
+        <input type="text" name="txt-mail" id="mail-contacto" placeholder="E-mail">
+        <textarea id="txt-mensaje" class="campo-texto" placeholder="Mensaje" rows="5"></textarea>
+        <button id="btn-enviar">Enviar</button>
+        <button id="btn-cancelar">Cancelar</button>
+        <a id="btn-git" href="https://github.com/musillis/Simon_2023_LPPA" target="_blank">Ir al repositorio en Github</a>
+    </div>
+</div>
+
+</body>
+</html>
